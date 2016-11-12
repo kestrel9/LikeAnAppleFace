@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">사과같은&#10;내&#160;얼굴</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- navigation item string -->
+    <string name="nav_item_all">모두보기</string>
+    <string name="nav_item_skin">스킨케어</string>
+    <string name="nav_item_base">베이스</string>
+    <string name="nav_item_color">색조</string>
+    <string name="nav_item_etc">기타</string>
+    <string name="nav_setting_help">도움말</string>
+
+    <string name="dialog_sort_title">정렬&#10;방식&#10;설정</string>
+
+
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">편집</string>
+    <string name="action_sort">정렬</string>
+
+    <!-- detail Activity resource -->
+    <string name="detail_pname">상품명</string>
+    <string name="detail_category_A">대분류</string>
+    <string name="detail_category_B">소분류</string>
+    <string name="detail_expire_date">유통기한</string>
+
+    <!-- button String resource -->
+    <string name="btn_positive">확인</string>
+    <string name="btn_negative">취소</string>
+    <string name="detail_btn_confrim">등&#160;&#160;&#160;&#160;&#160;&#160;&#160;록</string>
+    <string name="detail_btn_edit">수&#160;&#160;&#160;&#160;&#160;&#160;&#160;정</string>
+    <string name="detail_btn_cancel">취&#160;&#160;&#160;&#160;&#160;&#160;&#160;소</string>
+
+    <!-- toast String resource -->
+    <string name="toast_delete_text">목록에서&#160;삭제되었습니다.</string>
+    <string name="toast_detail_noti_text">제품명을&#160;입력해주세요.</string>
+    <string name="toast_detail_insert_text">등록되었습니다.</string>
+    <string name="toast_detail_edit_text">수정되었습니다.</string>
+
+    <!-- dialog String resource -->
+    <string name="dialog_delete_text">목록에서&#160;삭제하시겠습니까?</string>
+
+    <string name="default_term">[2016-11-09 ~ 2017-11-09]</string>
+
+
+</resources>

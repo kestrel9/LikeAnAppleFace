@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu">
+        <item>수정</item>
+        <item>삭제</item>
+    </string-array>
+    <string-array name="dialog_sort">
+        <item>최신&#10;등록일순</item>
+        <item>유통기한&#10;만료&#10;일순</item>
+    </string-array>
+    <string-array name="category1">
+        <item>스킨케어</item>
+        <item>베이스</item>
+        <item>색조</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="category_skin">
+        <item>스킨</item>
+        <item>로션</item>
+        <item>에센스</item>
+        <item>크림</item>
+        <item>필링</item>
+        <item>미스트</item>
+        <item>아이케어</item>
+    </string-array>
+    <string-array name="category_base">
+        <item>메이크업베이스</item>
+        <item>BB/CC크림</item>
+        <item>파운데이션</item>
+        <item>파우더</item>
+        <item>팩트</item>
+        <item>프라이머</item>
+        <item>컨실러</item>
+        <item>쿠션</item>
+        <item>자외선차단제</item>
+    </string-array>
+    <string-array name="category_color">
+        <item>마스카라</item>
+        <item>아이라이너(젤)</item>
+        <item>아이라이너(펜슬)</item>
+        <item>아이브로우</item>
+        <item>아이섀도우</item>
+        <item>립스틱</item>
+        <item>블러셔</item>
+        <item>하이라이터</item>
+        <item>립글로스/립밤</item>
+        <item>립틴트</item>
+    </string-array>
+    <string-array name="category_etc">
+        <item>렌즈</item>
+        <item>향수</item>
+        <item>매니큐어</item>
+    </string-array>
+
+    <string-array name="expire_3_month">
+        <item>마스카라</item>
+        <item>렌즈</item>
+        <item>아이라이너(젤)</item>
+    </string-array>
+
+    <string-array name="expire_6_month">
+        <item>미스트</item>
+        <item>립글로스/립밤</item>
+        <item>립틴트</item>
+    </string-array>
+
+    <string-array name="expire_8_month">
+        <item>에센스</item>
+
+    </string-array>
+
+    <string-array name="expire_12_month">
+        <item>스킨</item>
+        <item>로션</item>
+        <item>크림</item>
+        <item>필링</item>
+        <item>BB/CC크림</item>
+        <item>파우더</item>
+        <item>팩트</item>
+        <item>프라이머</item>
+        <item>컨실러</item>
+        <item>쿠션</item>
+        <item>자외선차단제</item>
+        <item>하이라이터</item>
+        <item>매니큐어</item>
+        <item>립스틱</item>
+        <item>아이라이너(펜슬)</item>
+    </string-array>
+
+    <string-array name="expire_18_month">
+        <item>메이크업베이스</item>
+        <item>파운데이션</item>
+
+    </string-array>
+
+    <string-array name="expire_24_month">
+        <item>아이케어</item>
+        <item>블러셔</item>
+        <item>아이브로우</item>
+        <item>아이섀도우</item>
+        <item>향수</item>
+    </string-array>
+
+</resources>

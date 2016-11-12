@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/detail_activity_margin"
+    android:paddingLeft="@dimen/detail_activity_margin"
+    android:paddingRight="@dimen/detail_activity_margin"
+    android:paddingTop="@dimen/detail_activity_margin"
+    tools:context="com.atomickitten.likeanappleface.DetailActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="5"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activityBackground"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/detail_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/fm_image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="@dimen/detail_frm_width"
+                android:layout_height="@dimen/detail_frm_height"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/frm_detail_pic"/>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fm_image">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/ic_header_size"
+                    android:layout_height="@dimen/ic_header_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_header"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/detail_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/detail_pname"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/detail_edit_padding"
+                android:layout_marginTop="@dimen/object_margin"
+                android:layout_marginRight="@dimen/object_margin"
+                android:layout_marginLeft="@dimen/object_margin"
+                android:background="@drawable/edit_text"
+                android:hint="제품명을 적어주세요."
+                android:textSize="@dimen/detail_input_text_size"
+                android:layout_below="@+id/tv_name"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_category_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/ll_name">
+            <LinearLayout
+                android:id="@+id/ll_category_big"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/ic_header_size"
+                        android:layout_height="@dimen/ic_header_size"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_header"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/detail_text_size"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/detail_category_A"
+                        />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/sp_categoryA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_category_small"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/ic_header_size"
+                        android:layout_height="@dimen/ic_header_size"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_header"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/detail_text_size"
+                        android:text="@string/detail_category_B"/>
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/sp_categoryB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_expire_date"
+            android:layout_marginTop="@dimen/object_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/ll_category_layout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/ic_header_size"
+                    android:layout_height="@dimen/ic_header_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_header"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/detail_text_size"
+                    android:text="@string/detail_expire_date"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_expire_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/object_margin"
+                android:layout_marginRight="@dimen/object_margin"
+                android:layout_marginLeft="@dimen/object_margin"
+                android:paddingLeft="@dimen/detail_edit_padding"
+                android:background="@drawable/edit_text"
+                android:textSize="@dimen/detail_input_text_size"
+                android:layout_below="@+id/tv_name"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_expire_date">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_marginRight="@dimen/object_margin"
+                android:layout_marginLeft="@dimen/object_margin"
+                android:layout_marginTop="@dimen/detail_btn_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_btn_height"
+                android:background="@drawable/button"
+                android:layout_weight="1"
+                android:layout_below="@+id/ll_expire_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/detail_btn_cancel"
+                android:textSize="@dimen/detail_text_size"
+                android:textColor="@color/colorWhite"/>
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_marginRight="@dimen/object_margin"
+                android:layout_marginLeft="@dimen/object_margin"
+                android:layout_marginTop="@dimen/detail_btn_top"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_btn_height"
+                android:background="@drawable/button"
+                android:layout_below="@+id/ll_expire_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/detail_btn_confrim"
+                android:textSize="@dimen/detail_text_size"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <!--
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="@dimen/detail_button_width"
+                    android:layout_height="@dimen/detail_button_height"
+                    android:background="@drawable/button"
+                    android:layout_below="@+id/ll_expire_date"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/detail_btn_top"
+                    android:text="@string/confrim"
+                    android:textSize="@dimen/detail_text_size"
+                    android:textColor="@color/colorWhite"/>
+
+                    -->
+    </RelativeLayout>
+
+</RelativeLayout>

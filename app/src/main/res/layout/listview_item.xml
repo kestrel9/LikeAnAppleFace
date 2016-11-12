@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_background"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBackground">
+
+    <RelativeLayout
+        android:id="@+id/rl_image_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_pic_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frm_list_pic"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_context"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/rl_image_frame">
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_header"
+                android:layout_width="@dimen/ic_header_size"
+                android:layout_height="@dimen/ic_header_size" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/detail_text_size"
+                android:text="@string/detail_pname"
+                />
+        </LinearLayout>
+        <!--
+        <ProgressBar
+            android:id="@+id/pb_leaf"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="10"
+            android:layout_below="@+id/ll_name"/>
+        -->
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="10"
+            android:layout_below="@+id/ll_name"/>
+        <TextView
+            android:id="@+id/tv_term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_term"
+            android:layout_below="@+id/pb_progress"
+            android:layout_alignRight="@+id/pb_progress"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
